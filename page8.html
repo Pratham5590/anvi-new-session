@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Do you remember what happened before? // ANVI SESSION</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="chrome">
+    <button class="chrome-logo" id="logoBtn" type="button" aria-label="ANVI system logo">
+      <span class="logo-mark">A</span><span class="logo-text">ANVI // NEW SESSION</span>
+    </button>
+    <div class="chrome-status">
+      <button class="session-tag" id="sessionBtn" type="button">SESSION 0047</button>
+      <span class="status-dot"><i></i> SYSTEM ONLINE</span>
+      <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false">🔈 SOUND: OFF</button>
+    </div>
+  </header>
+
+  <button class="back-btn" id="backBtn" type="button">‹ back</button>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="fx-overlay" id="fxOverlay" aria-hidden="true"></div>
+
+  <main class="app">
+    <div class="page" aria-live="polite">
+      <div class="card">
+        <p class="kicker">ARCHIVE ACCESS</p>
+        <h1 class="title">Do you remember what happened before?</h1>
+        <p class="body-text">The archive contains memories, confusion, and several unanswered questions.</p>
+
+        <div class="buttons">
+          <a class="choice primary" href="page11.html">Yes</a>
+          <a class="choice" href="page12.html">No ❤️</a>
+        </div>
+
+        <p class="footnote">NODE 08 / 14 · the archive does not judge. it just remembers everything.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="page-index">PAGE 08 / 14</div>
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
